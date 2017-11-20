@@ -37,9 +37,8 @@ h2 {
 	line-height: 40px;
 	font-weight: 100;
 	text-transform: uppercase;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	letter-spacing: 1px;
-	font-style: italic;;
 }
 
 h3 {
@@ -49,7 +48,7 @@ h3 {
 	line-height: 40px;
 	font-weight: 100;
 	text-transform: uppercase;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	letter-spacing: 1px;
 	font-style: italic;
 }
@@ -60,7 +59,7 @@ h4 {
 	font-size: 18px;
 	line-height: 20px;
 	font-weight: bold;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }	
 
 
