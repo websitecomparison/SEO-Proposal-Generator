@@ -36,7 +36,7 @@ jQuery(document).ready(function ($) {
 	Bootstrap Datepicker
 	https://github.com/eternicode/bootstrap-datepicker
 	 */
-	form.find('.input-group.date').datepicker(format: 'dd/mm/yyyy');
+	form.find('.input-group.date').datepicker();
 
 	/*
 	Editing the form
