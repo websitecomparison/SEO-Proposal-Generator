@@ -66,6 +66,12 @@
 								<textarea class="form-control" name="payment" placeholder="Payment Schedule" rows="2" required></textarea>
 							</div>
 						</div>
+						<div class="col-lg-12 col-md-4 col-sm-4">
+							<div class="form-group">
+								<label class="sr-only">Notes</label>
+								<textarea class="form-control" name="notes" placeholder="Notes" rows="2" required></textarea>
+							</div>
+						</div>
 					</div>
 					
 					<button type="submit" id="create-pdf-btn" class="btn btn-primary btn-lg btn-block">Save as PDF <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></button>
@@ -191,9 +197,10 @@
 								</tr>
 							</table>
 							<p>Date: <span class="item date">date</span></p>
-							<h3> Notes </h3>
 							<p>Everyone should sign above and keep a copy for their records.</p>
-							<p><br/><br/><br/><br/></p>
+
+							<h3> Notes </h3>
+							<p><b<span class="item notes">notes</span></p>
 						</div>
 					</div><!-- /#contract -->
 				</div><!-- /.container -->
