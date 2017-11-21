@@ -14,9 +14,9 @@ jQuery(document).ready(function ($) {
 		var html = contract.prop('outerHTML');
 
 		
-		 * Save to PDF
-		 * https://github.com/MrRio/jsPDF
-		 * http://stackoverflow.com/a/24825130
+		//save to PDF
+		// https://github.com/MrRio/jsPDF
+		// http://stackoverflow.com/a/24825130
 		
 		var doc = new jsPDF();
 		doc.fromHTML(
