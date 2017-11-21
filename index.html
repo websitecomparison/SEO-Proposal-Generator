@@ -100,7 +100,7 @@
 						</div>
 					</div>
 					
-					<button type="submit" id="create-pdf-btn" class="btn btn-primary btn-lg btn-block">Save as PDF <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></button>
+					<a href="javascript:genPDF()"><button type="submit" id="create-pdf-btn" class="btn btn-primary btn-lg btn-block">Save as PDF <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></button></a>
 					<input id="input-html" type="hidden" name="html" value="">
 				</form>
 
@@ -245,6 +245,23 @@
 	<script src="//api.filepicker.io/v2/filepicker.js"></script>
 	<script src="vendor/jspdf.min.js"></script>
 	<script src="app.js"></script>
-	<script src="plugins/create.js"></script>
+<script type="text/javascript" src="vendor/html2canvas.js"></script>
+  <script type="text/javascript">
+function genPDF()
+  {
+   html2canvas(document.body,{
+   onrendered:function(canvas){
+
+   var img=canvas.toDataURL("image/png");
+   var doc = new jsPDF();
+   doc.addImage(img,'JPEG',20,20);
+   doc.save('test.pdf');
+   }
+
+   });
+
+  }
+  </script>
+  </script>
 </body>
 </html>
