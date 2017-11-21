@@ -2,7 +2,8 @@ jQuery(document).ready(function ($) {
 
 	var form = $('#form-customize'),
 		contract = $('#contract');
-
+/*
+		
 	form.on('submit', function (e) {
 		e.preventDefault();
 
@@ -12,11 +13,11 @@ jQuery(document).ready(function ($) {
 		// Get the outerHTML
 		var html = contract.prop('outerHTML');
 
-		/**
+		
 		 * Save to PDF
 		 * https://github.com/MrRio/jsPDF
 		 * http://stackoverflow.com/a/24825130
-		 */
+		
 		var doc = new jsPDF();
 		doc.fromHTML(
 			html,
@@ -30,7 +31,39 @@ jQuery(document).ready(function ($) {
 
 		// Open PDF in new window
 		doc.output('dataurlnewwindow');
+	}); 
+	
+*/
+	
+	form.on('submit', function (e){
+		e.preventDefault();
+
+		// Copy the required stuff (style and encoding)
+		$('.inc_pdf').clone().addClass('temporary').prependTo('#contract');
+		
+		//setup html2canvas and feed into jsPDF
+		html2canvas(document.body,{
+			onrendered:function(canvas){
+
+			var img=canvas.toDataURL("image/png");
+			
+			var doc = new jsPDF();
+			doc.addImage(img,'JPEG',20,20);
+			
+			// Remove the files we appended earlier on (to restore the screen style)
+			contract.find('.temporary').remove();
+			
+			// Open PDF in new window
+
+			doc.output('dataurlnewwindow');
+			}
+
+		});
 	});
+	
+	
+	
+	
 
 	/*
 	Bootstrap Datepicker
