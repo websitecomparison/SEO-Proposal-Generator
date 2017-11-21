@@ -3,7 +3,6 @@ jQuery(document).ready(function ($) {
 	var form = $('#form-customize'),
 		contract = $('#contract');
 
-		
 	form.on('submit', function (e) {
 		e.preventDefault();
 
@@ -13,11 +12,11 @@ jQuery(document).ready(function ($) {
 		// Get the outerHTML
 		var html = contract.prop('outerHTML');
 
-		
-		//save to PDF
-		// https://github.com/MrRio/jsPDF
-		// http://stackoverflow.com/a/24825130
-		
+		/**
+		 * Save to PDF
+		 * https://github.com/MrRio/jsPDF
+		 * http://stackoverflow.com/a/24825130
+		 */
 		var doc = new jsPDF();
 		doc.fromHTML(
 			html,
@@ -31,23 +30,17 @@ jQuery(document).ready(function ($) {
 
 		// Open PDF in new window
 		doc.output('dataurlnewwindow');
-	}); 
-	
+	});
 
-	
-	
-	
-	
-
-	/
-	//Bootstrap Datepicker
-	//https://github.com/eternicode/bootstrap-datepicker
-	 //
+	/*
+	Bootstrap Datepicker
+	https://github.com/eternicode/bootstrap-datepicker
+	 */
 	form.find('.input-group.date').datepicker({ format: 'dd/mm/yyyy' });
 
-	//
-	//Editing the form
-	//
+	/*
+	Editing the form
+	 */
 	form.on('focus keyup change', '.form-control', function (event) {
 		event.preventDefault();
 		var inputName = $(this).attr('name');
