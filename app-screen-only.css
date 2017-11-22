@@ -160,6 +160,13 @@ body {
 .form-control {
 	border-radius: 0px;
 }
+
+.btn-primary {
+    color: #fff;
+    background-color: #5cbfc4;
+    border-color: #5cbfc4;
+}
+
 .sidebar-inner {
 	padding: 30px;
 }
