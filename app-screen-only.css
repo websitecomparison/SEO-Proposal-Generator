@@ -89,11 +89,11 @@
 }
 
 .sidebar-nav > .sidebar-brand a {
-	color: #999999;
+	color: #5cbfc4;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
-	color: #fff;
+	color: #5cbfc4;
 	background: none;
 }
 
@@ -171,15 +171,15 @@ body {
 	right: 30px;
 }
 .sidebar-about a {
-	color: #fff;
+	color: #5cbfc4;
 	text-decoration: none;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 .sidebar-about hr {
-	border-top: 5px solid #444;
+	border-top: 5px solid #f4dd1b;
 }
 .sidebar-about .glyphicon-heart {
-	color: #c0392b;
+	color: #ed705e;
 }
 #contract .item {
 	background-color: #fff;
