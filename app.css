@@ -44,8 +44,8 @@ h2 {
 h3 {
 	margin: 0.5em 0 0.5em 0;
 	color: #343434;
-	font-size: 22px;
-	line-height: 40px;
+	font-size: 18px;
+	line-height: 30px;
 	font-weight: 100;
 	text-transform: uppercase;
 	font-family: 'Roboto', sans-serif;
@@ -56,7 +56,7 @@ h3 {
 h4 {
 	margin: 0.5em 0 0.5em 0;
 	color: #343434;
-	font-size: 18px;
+	font-size: 14px;
 	line-height: 20px;
 	font-weight: bold;
 	font-family: 'Roboto', sans-serif;
