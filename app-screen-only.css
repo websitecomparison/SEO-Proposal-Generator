@@ -199,7 +199,7 @@ body {
 	box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.15);
 }
 #contract .item-editing {
-	background-color: #FFFACD;
+	background-color: #dffafb;
 	border-bottom: 2px solid;
 }
 @media (min-height: 830px) {
