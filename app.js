@@ -6,33 +6,6 @@ jQuery(document).ready(function ($) {
 	form.on('submit', function (e) {
 		e.preventDefault();
 
-		/*
-		// Copy the required stuff (style and encoding)
-		$('.inc_pdf').clone().addClass('temporary').prependTo('#contract');
-
-		// Get the outerHTML
-		var html = contract.prop('outerHTML');
-
-		
-		 //Save to PDF
-		 // /https://github.com/MrRio/jsPDF
-		 //http://stackoverflow.com/a/24825130
-		 //
-		var doc = new jsPDF();
-		doc.fromHTML(
-			html,
-			20,
-			20, {
-				'width': 180
-			});
-
-		// Remove the files we appended earlier on (to restore the screen style)
-		contract.find('.temporary').remove();
-
-		// Open PDF in new window
-		doc.output('dataurlnewwindow');
-		*/
-
 		var element = document.getElementById('contract');
 		html2pdf(element, {
 		  margin:       0.5,
@@ -41,11 +14,6 @@ jQuery(document).ready(function ($) {
 		  html2canvas:  { dpi: 192, letterRendering: true },
 		  jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
 		});
-
-
-
-
-
 
 	});
 
