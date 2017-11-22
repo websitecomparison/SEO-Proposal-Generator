@@ -35,7 +35,7 @@ jQuery(document).ready(function ($) {
 
 		var element = document.getElementById('contract');
 		html2pdf(element, {
-		  margin:       0.25,
+		  margin:       0.5,
 		  filename:     'WC-Contract.pdf',
 		  image:        { type: 'jpeg', quality: 0.98 },
 		  html2canvas:  { dpi: 192, letterRendering: true },
