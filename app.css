@@ -23,6 +23,12 @@ body {
 	margin-bottom: 30px;
 }
 
+.sidebarheader {
+	
+	color:#fff !important;
+	
+	}
+
 h2 {
 	margin: 0.5em 0 0.5em 0;
 
@@ -62,8 +68,3 @@ h4 {
 	font-family: 'Roboto', sans-serif;
 }	
 
-.sidebarheader {
-
-color:#fff !important;
-
-}
