@@ -6,17 +6,18 @@ jQuery(document).ready(function ($) {
 	form.on('submit', function (e) {
 		e.preventDefault();
 
+		/*
 		// Copy the required stuff (style and encoding)
 		$('.inc_pdf').clone().addClass('temporary').prependTo('#contract');
 
 		// Get the outerHTML
 		var html = contract.prop('outerHTML');
 
-		/**
-		 * Save to PDF
-		 * https://github.com/MrRio/jsPDF
-		 * http://stackoverflow.com/a/24825130
-		 */
+		
+		 //Save to PDF
+		 // /https://github.com/MrRio/jsPDF
+		 //http://stackoverflow.com/a/24825130
+		 //
 		var doc = new jsPDF();
 		doc.fromHTML(
 			html,
@@ -30,6 +31,22 @@ jQuery(document).ready(function ($) {
 
 		// Open PDF in new window
 		doc.output('dataurlnewwindow');
+		*/
+
+		var element = document.getElementById('contract');
+		html2pdf(element, {
+		  margin:       1,
+		  filename:     'WC-Contract.pdf',
+		  image:        { type: 'jpeg', quality: 0.98 },
+		  html2canvas:  { dpi: 192, letterRendering: true },
+		  jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+		});
+
+
+
+
+
+
 	});
 
 	/*
