@@ -14,7 +14,7 @@ jQuery(document).ready(function ($) {
 		  html2canvas:  { dpi: 192, letterRendering: true },
 		  jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
 		});
-
+		
 	});
 
 	/*
