@@ -111,7 +111,7 @@
 	}
 
 	#wrapper.toggled #sidebar-wrapper {
-		width: 10px;
+		width: 0;
 	}
 
 	#page-content-wrapper {
