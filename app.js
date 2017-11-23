@@ -47,27 +47,6 @@ jQuery(document).ready(function ($) {
 	});
 
 	/*
-	Filepicker
-	 */
-	filepicker.setKey('AaYOCmvPTuqi2elqaGIGgz');
-	form.on('change', 'input[name="logo"]', function () {
-		contract.find('.logo').attr('src', event.fpfile.url).removeClass('hide');
-	});
-	$('.btn-fp').attr('tabIndex', '-1');
-
-	/*
-	Geolocation
-	http://www.telize.com/
-	 */
-	form.on('click', '#locateme', function (event) {
-		event.preventDefault();
-		$('input[name="court"]').val('Searching location...');
-		$.getJSON('//geoip.nekudo.com/api', function (geodata) {
-			$('input[name="court"]').val(geodata.city).change();
-		});
-	});
-
-	/*
 	Media Queries
 	 */
 	if (matchMedia) {
