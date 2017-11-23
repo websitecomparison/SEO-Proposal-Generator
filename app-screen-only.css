@@ -111,7 +111,7 @@
 	}
 
 	#wrapper.toggled #sidebar-wrapper {
-		width: 0;
+		width: 10;
 	}
 
 	#page-content-wrapper {
@@ -283,11 +283,11 @@ MENU TOGGLE SWITCHES
 }
 
 .cmn-toggle-switch span::before {
-	top: 27px;
+	top: -27px;
 }
 
 .cmn-toggle-switch span::after {
-	bottom: 27px;
+	bottom: -27px;
 }
 
 /**
