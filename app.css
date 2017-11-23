@@ -71,7 +71,6 @@ h4 {
 		margin: 0.5em 0 0.5em 0;
 		background: #50c3c3;
 		background: rgba(80,195,195, 0.8);
-		border: 1px solid #fff;
 		padding: 5px 15px;
 		box-shadow: inset 0 0 5px rgba(53,86,129, 0.5);
 		font-size: 20px;
@@ -80,4 +79,5 @@ h4 {
 		text-transform: uppercase;
 		font-family: 'Roboto', sans-serif;
 		letter-spacing: 1px;
+		font-style: normal;
 	}
