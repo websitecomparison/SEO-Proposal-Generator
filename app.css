@@ -20,7 +20,8 @@ body {
 }
 #contract .logo {
 	margin-bottom: 30px;
-	text-align: right;
+	float:right;
+	clear: right;
 }
 
 
