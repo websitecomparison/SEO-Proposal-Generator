@@ -19,13 +19,8 @@ body {
 	margin: 0 0 18px;
 }
 #contract .logo {
-	max-height: 180px;
 	margin-bottom: 30px;
 	float:right;
-	display: block;
-	clear: both;
-	position: relative;
-	right:15px;
 }
 
 
