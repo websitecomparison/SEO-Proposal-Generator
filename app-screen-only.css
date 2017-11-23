@@ -15,7 +15,7 @@
 }
 
 #wrapper.toggled {
-	padding-left: 80px;
+	padding-left: 380px;
 }
 
 #sidebar-wrapper {
@@ -46,7 +46,7 @@
 
 #wrapper.toggled #page-content-wrapper {
 	position: absolute;
-	margin-right: -80px;
+	margin-right: -300px;
 }
 
 /* Sidebar Styles */
@@ -111,7 +111,7 @@
 	}
 
 	#wrapper.toggled #sidebar-wrapper {
-		width: 20;
+		width: 0;
 	}
 
 	#page-content-wrapper {
