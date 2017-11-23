@@ -46,7 +46,7 @@
 
 #wrapper.toggled #page-content-wrapper {
 	position: absolute;
-	margin-right: -300px;
+	margin-right: -380px;
 }
 
 /* Sidebar Styles */
@@ -111,7 +111,7 @@
 	}
 
 	#wrapper.toggled #sidebar-wrapper {
-		width: 10;
+		width: 10px;
 	}
 
 	#page-content-wrapper {
