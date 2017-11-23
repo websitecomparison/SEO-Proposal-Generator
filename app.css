@@ -22,6 +22,8 @@ body {
 	max-height: 180px;
 	margin-bottom: 30px;
 	float:right;
+	display: block;
+	clear: both;
 }
 
 
