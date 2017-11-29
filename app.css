@@ -84,3 +84,11 @@ h4 {
 		letter-spacing: 1px;
 		font-style: normal;
 	}
+
+	.head-block{
+		display:block;
+		min-height:80px;
+		height:80px;
+		max-height: 80px;
+
+	}
