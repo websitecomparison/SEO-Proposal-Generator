@@ -8,7 +8,7 @@ jQuery(document).ready(function ($) {
 
 		var element = document.getElementById('contract');
 		html2pdf(element, {
-		  margin:       array(0.25, 0.5, 0.25, 0.5),
+		  margin:       0.25,
 		  filename:     'WC-Proposal.pdf',
 		  image:        { type: 'jpeg', quality: 0.98 },
 		  html2canvas:  { dpi: 192, letterRendering: true },
